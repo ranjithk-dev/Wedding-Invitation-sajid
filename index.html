@@ -415,6 +415,24 @@ body::before{
 
     transform:scale(1.05);
 }
+/* GOOGLE MAP BUTTON */
+.map-btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:12px 28px;
+    border-radius:40px;
+    background:linear-gradient(45deg, #ff004c, #ff4d6d);
+    color:white;
+    text-decoration:none;
+    font-weight:700;
+    box-shadow:0 8px 20px rgba(255,0,76,0.25);
+    transition:0.3s;
+}
+
+.map-btn:hover{
+    transform:scale(1.05);
+    box-shadow:0 12px 28px rgba(255,0,76,0.35);
+}
 
 /* FLOATING HEARTS */
 
@@ -525,7 +543,7 @@ Randi bless cheyyandi 🙏✨
 <div class="date">
 📅 17 May 2026 (Sunday)
 <br>
-⏰ Time: 10:00 AM onwards
+⏰ Time: 7:00 PM onwards
 </div>
 
 <div class="venue">
@@ -534,6 +552,16 @@ Randi bless cheyyandi 🙏✨
 Balajipeta, Bommuru,
 <br>
 Rajahmundry
+<br><br>
+
+<!-- GOOGLE MAP BUTTON -->
+<a
+    href="https://www.google.com/maps/search/?api=1&query=Sri+Narasimharaju+Function+Hall+Balajipeta+Bommuru+Rajahmundry"
+    target="_blank"
+    class="map-btn"
+>
+    📍 Open in Google Maps
+</a>
 </div>
 
 </div>
@@ -560,290 +588,6 @@ Rajahmundry
 <div class="time-box">
 <h1 id="seconds">00</h1>
 <p>Seconds</p>
-</div>
-
-</div>
-
-<!-- PARTY BUTTON -->
-
-<button class="party-btn" onclick="openShop()">
-🍾 CLICK HERE FOR BACHELOR PARTY 🍾
-</button>
-
-<!-- SHOP -->
-
-<div class="shop" id="shop">
-
-<h2 class="shop-title">
-🥃 Bachelor Party Store 🥃
-</h2>
-
-<div class="products">
-
-<!-- RED LABEL -->
-
-<div class="product">
-
-<img src="images/chivas.jpg">
-
-<div class="info">
-
-<h3>Chivas Regal</h3>
-
-<div class="price">₹2,299</div>
-
-<button class="cart-btn"
-onclick="addToCart('Chivas Regal')">
-
-Add To Cart 🛒
-
-</button>
-
-</div>
-
-</div>
-
-<!-- BLUE LABEL -->
-
-<div class="product">
-
-<img src="images/blacklabel.jpg">
-
-<div class="info">
-
-<h3>Black Label</h3>
-
-<div class="price">₹18,999</div>
-
-<button class="cart-btn"
-onclick="addToCart('Black Label')">
-
-Add To Cart 🛒
-
-</button>
-
-</div>
-
-</div>
-
-<!-- JACK DANIELS -->
-
-<div class="product">
-
-<img src="images/jackdaniels.jpg">
-
-<div class="info">
-
-<h3>Jack Daniel's</h3>
-
-<div class="price">₹3,499</div>
-
-<button class="cart-btn"
-onclick="addToCart('Jack Daniels')">
-
-Add To Cart 🛒
-
-</button>
-
-</div>
-
-</div>
-
-<!-- OLD MONK -->
-
-<div class="product">
-
-<img src="images/oldmonnk.jpg">
-
-<div class="info">
-
-<h3>Old Monk</h3>
-
-<div class="price">₹899</div>
-
-<button class="cart-btn"
-onclick="addToCart('Old Monk')">
-
-Add To Cart 🛒
-
-</button>
-
-</div>
-
-</div>
-
-<!-- GLENFIDDICH -->
-
-<div class="product">
-
-<img src="images/glenfiddich.jpg">
-
-<div class="info">
-
-<h3>Glenfiddich</h3>
-
-<div class="price">₹6,999</div>
-
-<button class="cart-btn"
-onclick="addToCart('Glenfiddich')">
-
-Add To Cart 🛒
-
-</button>
-
-</div>
-
-</div>
-
-<!-- JAGERMEISTER -->
-
-<div class="product">
-
-<img src="images/ballentine.jpg">
-
-<div class="info">
-
-<h3>Ballentine</h3>
-
-<div class="price">₹2,999</div>
-
-<button class="cart-btn"
-onclick="addToCart('Ballentine')">
-
-Add To Cart 🛒
-
-</button>
-
-</div>
-
-</div>
-
-<div class="product">
-
-<img src="images/glenlivet.jpg">
-
-<div class="info">
-
-<h3>Glenlivet</h3>
-
-<div class="price">₹4,889</div>
-
-<button class="cart-btn"
-onclick="addToCart('Glenlivet')">
-
-Add To Cart 🛒
-
-</button>
-
-</div>
-
-</div>
-
-<div class="product">
-
-<img src="images/jaggermister.jpg">
-
-<div class="info">
-
-<h3>Jaggermister</h3>
-
-<div class="price">₹4,999</div>
-
-<button class="cart-btn"
-onclick="addToCart('Jaggermister')">
-
-Add To Cart 🛒
-
-</button>
-
-</div>
-
-</div>
-
-<div class="product">
-
-<img src="images/indri.jpg">
-
-<div class="info">
-
-<h3>Indri</h3>
-
-<div class="price">₹5,999</div>
-
-<button class="cart-btn"
-onclick="addToCart('Indri')">
-
-Add To Cart 🛒
-
-</button>
-
-</div>
-
-</div>
-
-<div class="product">
-
-<img src="images/jameson.jpg">
-
-<div class="info">
-
-<h3>Jameson</h3>
-
-<div class="price">₹2,999</div>
-
-<button class="cart-btn"
-onclick="addToCart('Jameson')">
-
-Add To Cart 🛒
-
-</button>
-
-</div>
-
-</div>
-
-<div class="product">
-
-<img src="images/Jimbeam.jpg">
-
-<div class="info">
-
-<h3>Jim Beam</h3>
-
-<div class="price">₹3,999</div>
-
-<button class="cart-btn"
-onclick="addToCart('Jim Beam')">
-
-Add To Cart 🛒
-
-</button>
-
-</div>
-
-</div>
-
-<div class="product">
-
-<img src="images/Teachers.jpg">
-
-<div class="info">
-
-<h3>Teachers</h3>
-
-<div class="price">₹4,999</div>
-
-<button class="cart-btn"
-onclick="addToCart('Teachers')">
-
-Add To Cart 🛒
-
-</button>
-
-</div>
-
-</div>
-
 </div>
 
 </div>
